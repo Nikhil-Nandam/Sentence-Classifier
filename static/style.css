@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(155, 155, 243);
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'EB Garamond', serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    /* margin: 50px; */
+}
+table tr th {
+    height: 30px;
+}
+table tr td {
+    /* border-radius: 15px;
+    background-color: white;
+    height: 510px;
+    display: block; */
+    margin: 15px;
+    width: 85%;
+    font-size: large;
+} 
+table tr td textarea{
+    height: 503px;
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+    color: black;;
+    border-radius: 15px;
+}
+#button {
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-items: end;
+    border-radius: 10px;
+    /* margin-left: 55px; */
+    margin-top: 10px;
+    /* margin: auto; */
+}
+  
+#button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #4CAF50;
+}
+
+h1{
+    text-align: center;
+}
+
+.button_container {
+    margin: auto;
+    width: 88%;
+}
+
+#textbox {
+    /* border: none; */
+    border: 3px solid #777777;
+    /* border-bottom: 2px solid red; */
+    padding: 15px 20px;
+    background-color: rgba(186, 186, 246, 0.7);
+    resize: none;
+    font-size: large;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'EB Garamond', serif;
+    transition: 0.5s;
+    outline: none;
+}
+
+#textbox:focus {
+    border: 3px solid #333;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Classifier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=EB+Garamond:wght@500&family=Libre+Baskerville:ital@1&family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="../static/style_prediction.css">
+</head>
+
+<body>
+    <div class="container">
+    <h1>Joint Sentence Classification for Medical Paper Abstracts</h1>
+        <div class="signin-form">
+            <h2 class="form-title">Original Abstract</h2>
+            </br>
+            <!-- {{original}} -->
+            <p>
+            This RCT examined the efficacy of a manualized social intervention for children with HFASDs. Participants were randomly assigned to treatment or wait-list conditions. Treatment included instruction and therapeutic activities targeting social skills, face-emotion recognition, interest expansion, and interpretation of non-literal language. A response-cost program was applied to reduce problem behaviors and foster skills acquisition. Significant treatment effects were found for five of seven primary outcome measures (parent ratings and direct child measures). Secondary measures based on staff ratings (treatment group only) corroborated gains reported by parents. High levels of parent, child and staff satisfaction were reported, along with high levels of treatment fidelity. Standardized effect size estimates were primarily in the medium and large ranges and favored the treatment group.
+            </p>
+            </br></br>
+            <h2 class="form-title">Classified Abstract</h2>
+            </br>
+            <!-- {% for prediction in predictions %} 
+                {{ prediction }} -->
+            <p>
+            OBJECTIVE: This RCT examined the efficacy of a manualized social intervention for children with HFASDs. 
+            </br>
+            METHODS: Participants were randomly assigned to treatment or wait-list conditions. 
+            </br>
+            METHODS: Treatment included instruction and therapeutic activities targeting social skills, face-emotion recognition, interest expansion, and interpretation of non-literal language. 
+            </br>
+            METHODS: A response-cost program was applied to reduce problem behaviors and foster skills acquisition. 
+            </br>
+            METHODS: Significant treatment effects were found for five of seven primary outcome measures (parent ratings and direct child measures). 
+            </br>
+            METHODS: Secondary measures based on staff ratings (treatment group only) corroborated gains reported by parents. 
+            </br>
+            RESULTS: High levels of parent, child and staff satisfaction were reported, along with high levels of treatment fidelity. 
+            </br>
+            RESULTS: Standardized effect size estimates were primarily in the medium and large ranges and favored the treatment group.
+            </br>
+            </p>
+            <!-- {% endfor %} -->
+            </br></br>
+            <div class="form-group">
+                <label for="agree-term" class="label-agree-term"><span><span></span></span>
+                    <a href="{{url_for('home')}}" class="term-service">HOME</a>
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

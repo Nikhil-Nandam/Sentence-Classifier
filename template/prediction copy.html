@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Classifier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=EB+Garamond:wght@500&family=Libre+Baskerville:ital@1&family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="../static/style_prediction.css">
+</head>
+
+<body>
+    <h1>Joint Sentence Classification for Medical Paper Abstracts</h1>
+    <div class="container">
+        <div class="signin-form">
+            <table>
+                <tr>
+                    <th><h2 class="form-title">Original Abstract</h2></th>
+                    <th><h2 class="form-title">Classified Abstract</h2></th>
+                </tr>
+                <tr>
+                    <td>
+                        {{original}}
+                    </td>
+                    <td>
+                        {% for prediction in predictions %} 
+                            {{ prediction }}
+                        </br>
+                        {% endfor %}
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-group">
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>
+                            <a href="{{url_for('home')}}" id="button" class="term-service">HOME</a>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

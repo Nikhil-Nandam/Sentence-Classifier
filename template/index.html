@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Classifier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=EB+Garamond:wght@500&family=Libre+Baskerville:ital@1&family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="../static/style_index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Joint Sentence Classification for Medical Paper Abstracts</h1>
+        <form action="/prediction" method="POST">
+            <table>
+                <tr>
+                    <th><h2>Original Abstract</h2></th>
+                    <!-- <th><h3>Classified Abstract</h3></th> -->
+                </tr>
+                <!-- <tr>
+                    <td>
+                        <p>Paste the abstract to be classified</p>
+                    </td>
+                </tr> -->
+                <tr>
+                    <td class="table-data">
+                        <textarea name="textbox" id="textbox" required></textarea>
+                    </td>
+                    <!-- <td class="table-data"> -->
+                        <!-- <p></p> -->
+                    <!-- </td> -->
+                </tr>
+            </table>
+            <div class="button_container">
+                <input type="submit" id="button" value="CLASSIFY">
+            </div>
+                    <!-- <td><input type="submit" id="button" value="CLASSIFY"></td> -->
+                <!-- </tr> -->
+        </form>
+    </div>
+</body>
+
+</html>
